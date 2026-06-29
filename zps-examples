@@ -1,0 +1,54 @@
+# ZPS Examples
+
+Collezione di esempi pratici e case study per il framework ZPS.
+
+## 📂 Cartelle
+
+- **basic_extraction/**: Estrazione energia da sistema semplice
+- **enron_case_study/**: Analisi completa dataset Enron
+- **synthetic_networks/**: Generazione reti sintetiche
+- **visualization/**: Visualizzazione risultati
+- **jupyter_notebooks/**: Notebook interattivi
+
+## 🔬 Esempi Disponibili
+
+### 1. Basic Extraction
+```bash
+python examples/basic_extraction.py
+```
+Estrae energia da organizzazione di 50 agenti con connessioni casuali.
+
+### 2. Enron Analysis
+```bash
+python examples/enron_analysis.py
+```
+Analizza 517.431 email del top management Enron prima del collasso.
+
+### 3. Topological Defects
+```bash
+python examples/detect_defects.py
+```
+Rileva stringhe cosmiche organizzative in reti complesse.
+
+## 📊 Output Visualizzazioni
+
+Genera automaticamente:
+- Grafici di coerenza
+- Mappe di entanglement
+- Network visualization
+- Heatmap di energia
+
+## 📚 Jupyter Notebooks
+
+```bash
+jupyter notebook notebooks/
+```
+
+Disponibili:
+- `01_getting_started.ipynb`
+- `02_enron_deep_dive.ipynb`
+- `03_network_analysis.ipynb`
+
+## 📧 Contatti
+
+senemosiapuntozero@gmail.com
