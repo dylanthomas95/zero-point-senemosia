@@ -1,0 +1,75 @@
+
+"""Tests for ZPS Framework"""
+
+import pytest
+import numpy as np
+from src.framework import Framework
+from src.organizational_system import OrganizationalSystem, Agent
+
+
+class TestFramework:
+    @pytest.fixture
+    def framework(self):
+        return Framework()
+    
+    @pytest.fixture
+    def system(self):
+        return OrganizationalSystem(n_agents=20)
+    
+    def test_initialization(self, framework):
+        assert framework.regularization_type == "ramanujan"
+        assert np.isclose(framework.golden_ratio, 1.618, atol=0.01)
+        assert np.isclose(framework.ramanujan_constant, -1/12)
+    
+    def test_energy_extraction(self, framework, system):
+        result = framework.extract_zero_point_energy(system)
+        assert "zpe_index" in result
+        assert 0 <= result["zpe_index"] <= 100
+        assert "coherence_field_ratio" in result
+    
+    def test_organizational_system(self, system):
+        assert len(system.agents) == 20
+        adj = system.get_adjacency_matrix()
+        assert adj.shape == (20, 20)
+        assert np.allclose(adj, adj.T)  # Symmetric
+
+
+if __name__ == "__main__":
+    pytest.main([__file__])
+"""Tests for ZPS Framework"""
+
+import pytest
+import numpy as np
+from src.framework import Framework
+from src.organizational_system import OrganizationalSystem, Agent
+
+
+class TestFramework:
+    @pytest.fixture
+    def framework(self):
+        return Framework()
+    
+    @pytest.fixture
+    def system(self):
+        return OrganizationalSystem(n_agents=20)
+    
+    def test_initialization(self, framework):
+        assert framework.regularization_type == "ramanujan"
+        assert np.isclose(framework.golden_ratio, 1.618, atol=0.01)
+        assert np.isclose(framework.ramanujan_constant, -1/12)
+    
+    def test_energy_extraction(self, framework, system):
+        result = framework.extract_zero_point_energy(system)
+        assert "zpe_index" in result
+        assert 0 <= result["zpe_index"] <= 100
+        assert "coherence_field_ratio" in result
+    
+    def test_organizational_system(self, system):
+        assert len(system.agents) == 20
+        adj = system.get_adjacency_matrix()
+        assert adj.shape == (20, 20)
+        assert np.allclose(adj, adj.T)  # Symmetric
+
+
+if __name__ == "__main__":
+    pytest.main([__file__])
