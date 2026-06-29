@@ -1,0 +1,37 @@
+# Introduzione a Zero Point Senemosì̀a
+
+## Cos'è ZPS?
+
+Zero Point Senemosì̀a (ZPS) è un framework quantistico-ispirato per l'estrazione di energia latente nei sistemi organizzativi complessi.
+
+## Il Problema
+
+Le organizzazioni moderne sono sistemi dissipativi lontani dall'equilibrio termodinamico, caratterizzati da:
+- Fluttuazioni stocastiche non controllabili
+- Accoppiamenti non lineari tra dipartimenti
+- Dinamiche adattive complesse
+- Asimmetrie informative intra-strato
+
+I paradigmi manageriali tradizionali falliscono nel mappare e valorizzare le interazioni non espresse.
+
+## La Soluzione
+
+ZPS applica la meccanica quantistica per:
+1. **Modellare** l'organizzazione come spazio di Hilbert multidimensionale
+2. **Identificare** energie residue (Energia di Punto Zero Organizzativa - EZPE)
+3. **Estrarre** potenziale latente nei segnali deboli e reti informali
+4. **Stabilizzare** la convergenza mediante regolarizzazione di Ramanujan
+
+## Risultati Validati
+
+Nel case study Enron Email Corpus (517.431 comunicazioni):
+- **ROC-AUC**: 0.942
+- **Precision**: 0.914
+- **Recall**: 0.895
+- **F1-Score**: 0.904
+
+## Prossimi Passi
+
+1. Installa il framework: `pip install zps-framework`
+2. Leggi [Fondamenti Teorici](./02-fondamenti-teorici.md)
+3. Prova gli [Esempi](../examples/)
